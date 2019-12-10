@@ -1,0 +1,22 @@
+version: 1
+name: DHLIB-p5
+
+migrations:
+  -
+    hash: 683267b2863eed4cb28141de3abfaec1dd6bdf8f
+    path: schema/init.sql
+  -
+    hash: 18f6ca99caf48f287f3a5c525957369a8da86154
+    path: schema/second.sql
+  -
+    hash: 66d08bd4e231e0c2d414ce8c1b5fd766566fe79b
+    path: views/third.sql
+    mutable: true
+  -
+    hash: 66d08bd4e231e0c2d414ce8c1b5fd766566fe79b
+    path: views/third.sql
+    mutable: true
+  -
+    hash: 5562ebe3b5edb09ef32c237af1d7881cebb35774
+    path: views/third.sql
+    mutable: true

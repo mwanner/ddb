@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="ddb-coding-style">
+ <file>src</file>
+ <file>tests</file>
+
+ <exclude-pattern>vendor</exclude-pattern>
+
+ <arg value="np"/>
+
+ <rule ref="PSR2"/>
+</ruleset>

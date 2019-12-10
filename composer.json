@@ -1,0 +1,38 @@
+{
+    "name": "mwanner/ddb",
+    "description": "Datahouse Database Tool",
+    "keywords": ["database", "SQL", "migration", "tool"],
+    "license": "MIT",
+    "bin": ["bin/ddb"],
+    "require": {
+        "php": ">=5.6",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-pdo_pgsql": "*",
+        "ext-pdo_sqlite": "*",
+        "symfony/console": "3.4.*",
+        "symfony/filesystem": "3.4.*",
+        "symfony/yaml": "3.4.*",
+        "level-2/dice": "2.*",
+        "clue/graph": "0.9.*",
+        "graphp/graphviz": "0.2.*",
+        "react/child-process": "0.5.*"
+    },
+    "require-dev": {
+        "nikic/php-parser": "1.1.*",
+        "overtrue/phplint": "1.2.*",
+        "phpunit/phpunit": "4.*",
+        "pdepend/pdepend": "2.*",
+        "phpmd/phpmd": "2.*",
+        "squizlabs/php_codesniffer": "2.*",
+        "sebastian/phpcpd": "2.*",
+        "theseer/phpdox": "0.*",
+        "phploc/phploc": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Datahouse\\Libraries\\Database\\": "src/",
+            "Datahouse\\Libraries\\Database\\Tests\\": "tests/"
+        }
+    }
+}

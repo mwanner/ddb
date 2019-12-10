@@ -1,0 +1,7 @@
+version: 1
+name: DHLIB-p2
+
+migrations:
+  -
+    hash: 1d3ea
+    path: schema/init.sql

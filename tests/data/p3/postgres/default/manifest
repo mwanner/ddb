@@ -1,0 +1,17 @@
+version: 1
+name: DHLIB-test-p3
+
+# Simple linear history
+migrations:
+  -
+    hash: 6c912a3c7738ef103e18709adf27abcabea7831b
+    path: schema/init.sql
+  -
+    hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+    path: schema/update_users.sql
+
+  # Add a new step that doesn't exist, yet. Test for
+  # a proper warning.
+  -
+    hash: 2349656037650231fc350d60664e168bf2c4bbcf
+    path: schema/inexistent.sql

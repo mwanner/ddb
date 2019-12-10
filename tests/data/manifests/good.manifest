@@ -1,0 +1,8 @@
+version: 1
+name: DHLIB-manifest-good
+
+# a good test manifest with a single manifest step
+migrations:
+  -
+    hash: ef5ea2dae26134542b8e8af29044eee66e47ac63
+    path: schema/example.sql

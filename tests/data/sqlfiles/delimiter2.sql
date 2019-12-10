@@ -1,0 +1,4 @@
+DELIMITER |
+SELECT true|
+DELIMITER ;
+SELECT false;

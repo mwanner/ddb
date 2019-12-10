@@ -1,0 +1,10 @@
+version: 1
+name: DHLIB-test-p3
+
+# Simple linear history
+migrations:
+  -
+    hash: 7a0c6fce434be9c8be7d294d14105fce53461b67
+    path: schema/init.sql
+
+  # does not have update_users.sql nor schema/inexistent.sql steps.

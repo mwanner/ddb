@@ -1,0 +1,5 @@
+# a future manifest version
+version: 999
+name: DHLIB-manifest-future
+
+migrations: []

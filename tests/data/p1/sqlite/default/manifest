@@ -1,0 +1,8 @@
+version: 1
+name: DHLIB-p1
+
+migrations:
+  # a comment
+  -
+    hash: 572376ee2f4f659f3a6f80daecd037a826cda2de
+    path: schema/init.sql

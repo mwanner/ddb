@@ -1,0 +1,7 @@
+/api
+/build
+/composer.lock
+/logs
+/phpdox
+/vendor
+/*.stamp
