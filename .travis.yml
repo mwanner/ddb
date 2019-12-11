@@ -1,0 +1,24 @@
+---
+language: php
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+  - 7.3
+  - 7.4
+
+sudo: false
+
+cache:
+ directories:
+   - $HOME/.composer/cache
+
+before-install:
+ - composer self-update
+
+install:
+  - composer install --dev
+
+script:
+  - phpunit
