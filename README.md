@@ -2,6 +2,8 @@
 
 Integrate database schema management with version control.
 
+[![Latest Stable Version](https://poser.pugx.org/mwanner/ddb/v/stable)](https://packagist.org/packages/mwanner/ddb) [![Build Status](https://travis-ci.org/mwanner/ddb.svg?branch=master)](https://travis-ci.org/mwanner/ddb) [![Coverage Status](https://coveralls.io/repos/github/mwanner/ddb/badge.svg?branch=master)](https://coveralls.io/github/mwanner/ddb?branch=master) ![Supported PHP Version](https://img.shields.io/packagist/php-v/mwanner/ddb) [![License](https://poser.pugx.org/mwanner/ddb/license)](https://packagist.org/packages/mwanner/ddb)
+
 ## Installation
 
 It's recommended that you use [Composer](https://getcomposer.org/) to
