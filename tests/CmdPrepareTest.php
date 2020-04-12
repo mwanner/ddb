@@ -105,8 +105,11 @@ class CmdPrepareTest extends CommandTestBase
 
         // ddb update directly adds the historic version of the step to the
         // blob directory.
+        self::assertTrue(is_dir($blobDir),
+                         "blob dir in '$blobDir' has been created");
         $histPath = $blobDir . '/66d08bd4e231e0c2d414ce8c1b5fd766566fe79b';
-        self::assertTrue(is_file($histPath));
+        self::assertTrue(is_file($histPath),
+                         "old variant of third.sql has been created");
 
         $manifestPath = $this->toplevel . '/sqlite/default/manifest';
         $manifestData = file_get_contents($manifestPath);
