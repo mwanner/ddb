@@ -165,7 +165,12 @@ abstract class CommandTestBase extends \PHPUnit_Framework_TestCase
         $output = new BufferedOutput();
         /* @var Command $cmd */
         $exitCode = $cmd->run($input, $output);
-        self::assertEquals($exitCode, $expExitCode, "exit code mismatch");
-        return $output->fetch();
+        $output_str = $output->fetch();
+        self::assertEquals($exitCode, $expExitCode,
+                           "exit code mismatch\n" .
+                           "===== BEGIN OUTPUT =====\n" .
+                           $output_str .
+                           "===== END OUTPUT =====\n");
+        return $output_str;
     }
 }

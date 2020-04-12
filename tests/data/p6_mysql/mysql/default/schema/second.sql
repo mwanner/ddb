@@ -1,0 +1,5 @@
+CREATE TABLE second (
+  id INTEGER PRIMARY KEY,
+  first_id INT NOT NULL REFERENCES first(id),
+  dsc VARCHAR(255) NOT NULL DEFAULT ''
+);

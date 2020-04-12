@@ -91,6 +91,14 @@ abstract class BasePdoDriver
      */
     abstract public function createDatabase(BaseConnectionInfo $connInfo);
 
+    /**
+     * Drops a database.
+     *
+     * @param BaseConnectionInfo $connInfo the database to drop
+     * @return void
+     * @throws \PDOException
+     */
+    abstract public function dropDatabase(BaseConnectionInfo $connInfo);
 
     /**
      * Check if the given role exists on the database system connected to.

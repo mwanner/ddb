@@ -1,0 +1,17 @@
+{
+    "mysql-superuser": {
+        "type": "mysql",
+        "host": "127.0.0.1",
+        "user": "root",
+        "password": "",
+        "superuser": true
+    },
+    "testdb": {
+        "type": "mysql",
+        "host": "127.0.0.1",
+        "user": "travis",
+        "dbname": "testdb",
+        "password": "",
+        "superuser" : false
+    }
+}

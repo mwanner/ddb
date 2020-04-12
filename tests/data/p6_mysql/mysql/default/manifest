@@ -1,0 +1,14 @@
+version: 1
+name: DHLIB-p4
+
+migrations:
+  -
+    hash: eb0af976f9afcd8257c0a5777ce9d7d1a7b22113
+    path: schema/init.sql
+  -
+    hash: 9cc96e5444b296173c19c9d6f6850698fbe233a5
+    path: schema/second.sql
+  -
+    hash: 66d08bd4e231e0c2d414ce8c1b5fd766566fe79b
+    path: views/third.sql
+    mutable: true
