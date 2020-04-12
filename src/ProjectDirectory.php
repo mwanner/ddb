@@ -61,7 +61,7 @@ class ProjectDirectory
         foreach (array_keys(Constants::$DATABASE_TYPES) as $type) {
             // For each kind of database supported, search for a so-called
             // directory containing manifest files, e.g.
-            // mysql/vtinvest/manifest, mysql/vtpartnerportal/manifest.
+            // mysql/variant_a/manifest, mysql/variant_b/manifest.
             $db_dir = $dir . '/' . $type;
             if (is_dir($db_dir) && $dh = opendir($db_dir)) {
                 while (($entry = readdir($dh)) !== false) {
