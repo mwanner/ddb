@@ -178,14 +178,15 @@ abstract class Command extends \Symfony\Component\Console\Command\Command
     {
         $availableVariants = $this->project->enumVariants();
         $knownIds = $this->lookup->getKnownConnectionIds();
+        $connInfo = $this->lookup->getConnInfoById($dbid);
 
-        if (!in_array(Constants::DEFAULT_DATABASE_ID, $knownIds)) {
+        if (!$connInfo &&
+            !in_array(Constants::DEFAULT_DATABASE_ID, $knownIds)) {
             throw new UserError(
                 "No default database found, please specify a database id."
             );
         }
 
-        $connInfo = $this->lookup->getConnInfoById($dbid);
         $type = $connInfo->getType();
         if (!in_array($type, $availableVariants[$variant])) {
             throw new UserError(
