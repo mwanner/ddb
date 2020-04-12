@@ -198,10 +198,10 @@ class Sqlite extends BasePdoDriver
         $this->pdo->beginTransaction();
         $this->pdo->exec('
             CREATE TABLE __applied_migrations (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 ts DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
                 hash TEXT NOT NULL,
-                filename TEXT NOT NULL,
-                PRIMARY KEY (hash, ts)
+                filename TEXT NOT NULL
             );
         ');
         $this->pdo->commit();
@@ -220,7 +220,7 @@ class Sqlite extends BasePdoDriver
         $res = $this->pdo->query('
             SELECT ts, hash AS filehash, filename
             FROM __applied_migrations
-            ORDER BY ts ASC, hash ASC;
+            ORDER BY id ASC;
         ');
         return array_map(function ($arr) {
             return AppliedStep::fromArray($arr);

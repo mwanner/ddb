@@ -179,7 +179,7 @@ class Mysql extends BasePdoDriver
             $res = $this->pdo->query('
                 SELECT ts, hash AS filehash, filename
                 FROM __applied_migrations
-                ORDER BY ts ASC, id ASC;
+                ORDER BY id ASC;
             ');
             return array_map(function ($arr) {
                 return AppliedStep::fromArray($arr);
